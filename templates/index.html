@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyline Dsilva - AI/ML Engineer & Developer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading">
+        <div class="loading-content">
+            <div class="loading-animation">
+                <div class="ai-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="loading-text">
+                    <span class="letter">J</span>
+                    <span class="letter">O</span>
+                    <span class="letter">Y</span>
+                    <span class="letter">L</span>
+                    <span class="letter">I</span>
+                    <span class="letter">N</span>
+                    <span class="letter">E</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">JD</span>
+                <span class="logo-dot"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="/download-resume" class="btn-resume">Download CV</a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">
+                        <i class="fas fa-star"></i>
+                        <span>AI/ML Engineer</span>
+                    </div>
+                    <h1>
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Joyline <span class="highlight">Dsilva</span></span>
+                    </h1>
+                    <p class="hero-description">
+                        Passionate about building <span class="typed-text"></span><span class="cursor">|</span>
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">8.83</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">7+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Hackathons</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <span>View Projects</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/joyline-dsilva" target="_blank" class="social-link" data-tooltip="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/JoylineDsilva" target="_blank" class="social-link" data-tooltip="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:joylined2004@gmail.com" class="social-link" data-tooltip="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-card">
+                            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Joyline Dsilva" class="profile-img">
+                            <div class="profile-glow"></div>
+                            <div class="profile-badge">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="floating-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Scroll Down</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-main">
+                        <p>Final-year B.E. student in <strong>Artificial Intelligence & Machine Learning</strong> at PA College of Engineering, Mangalore with an impressive <strong>CGPA of 8.83</strong>. Passionate about creating intelligent solutions that bridge the gap between data science and real-world applications.</p>
+                        <p>My expertise spans across <strong>Machine Learning, Deep Learning, Natural Language Processing, and Computer Vision</strong>, with hands-on experience in building end-to-end AI applications using Python, Flask, and modern AI frameworks.</p>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-card">
+                            <div class="card-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Education</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <h4>B.E. AI & ML</h4>
+                                    <p>PA College of Engineering</p>
+                                    <span>CGPA: 8.83</span>
+                                    <em>Present</em>
+                                </div>
+                                <div class="timeline-item">
+                                    <h4>Pre University</h4>
+                                    <p>Nitte Sam PU College</p>
+                                    <span>81.83%</span>
+                                    <em>2022</em>
+                                </div>
+                                <div class="timeline-item">
+                                    <h4>SSLC</h4>
+                                    <p>St Francis English Medium School</p>
+                                    <span>81.44%</span>
+                                    <em>2020</em>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-card">
+                            <div class="card-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Achievements & Certifications</h3>
+                            <ul class="achievements-list">
+                                <li>
+                                    <i class="fas fa-medal"></i>
+                                    <span>GirlGeek Hackathon Participant</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-code"></i>
+                                    <span>CodeMeet Hackathon Participant</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Deloitte Data Analytics Simulation</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-cloud"></i>
+                                    <span>AWS Solutions Architecture</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-robot"></i>
+                                    <span>Machine Learning For All</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-language"></i>
+                                    <span>NLP using Python</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-main">
+                    <div class="skills-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-skill="95">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="85">
+                                <div class="skill-info">
+                                    <span class="skill-name">C Programming</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-skill="90">
+                                <div class="skill-info">
+                                    <span class="skill-name">Flask</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="88">
+                                <div class="skill-info">
+                                    <span class="skill-name">OpenCV</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="85">
+                                <div class="skill-info">
+                                    <span class="skill-name">PyTorch</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="87">
+                                <div class="skill-info">
+                                    <span class="skill-name">Scikit-learn</span>
+                                    <span class="skill-percent">87%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="83">
+                                <div class="skill-info">
+                                    <span class="skill-name">TensorFlow</span>
+                                    <span class="skill-percent">83%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>AI/ML Domains</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-skill="88">
+                                <div class="skill-info">
+                                    <span class="skill-name">Machine Learning</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="85">
+                                <div class="skill-info">
+                                    <span class="skill-name">Deep Learning</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="82">
+                                <div class="skill-info">
+                                    <span class="skill-name">Natural Language Processing</span>
+                                    <span class="skill-percent">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="86">
+                                <div class="skill-info">
+                                    <span class="skill-name">Computer Vision</span>
+                                    <span class="skill-percent">86%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-sidebar">
+                    <div class="tech-stack">
+                        <h4>Tech Stack Overview</h4>
+                        <div class="tech-category">
+                            <h5>Databases</h5>
+                            <div class="tech-tags">
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h5>Data Visualization</h5>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">Tableau</span>
+                                <span class="tech-tag">Microsoft Excel</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h5>Web Technologies</h5>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h5>Tools & Others</h5>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Git</span>
+                                <span class="tech-tag">Problem Solving</span>
+                                <span class="tech-tag">Team Collaboration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">My work in AI/ML and Software Development</p>
+            </div>
+            <div class="projects-grid">
+                {% for project in projects %}
+                <div class="project-card" data-project-id="{{ project.id }}">
+                    <div class="project-header">
+                        <h3>{{ project.title }}</h3>
+                        {% if project.status == "Ongoing" %}
+                        <span class="project-badge ongoing">Ongoing</span>
+                        {% else %}
+                        <span class="project-badge completed">Completed</span>
+                        {% endif %}
+                    </div>
+                    <div class="project-content">
+                        <p>{{ project.description }}</p>
+                        <div class="project-tech">
+                            {% for tech in project.technologies %}
+                            <span class="tech-tag">{{ tech }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-view" data-project-id="{{ project.id }}">
+                            <i class="fas fa-eye"></i>
+                            View Details
+                        </button>
+                        <a href="{{ project.github_url }}" class="btn-github" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="projects-cta">
+                <a href="https://github.com/JoylineDsilva" target="_blank" class="btn btn-outline">
+                    <span>View All Projects on GitHub</span>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:joylined2004@gmail.com">joylined2004@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+917795382328">+91 77953 82328</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <span>Udupi, Karnataka, India</span>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Languages</h3>
+                            <span>English, Hindi, Konkani, Kannada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <h3>Ready to bring your ideas to life?</h3>
+                    <p>I'm always open to discussing new opportunities and interesting projects in AI/ML and software development.</p>
+                    <div class="contact-buttons">
+                        <a href="mailto:joylined2004@gmail.com" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </a>
+                        <a href="/download-resume" class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span>JD</span>
+                        <span class="logo-dot"></span>
+                    </div>
+                    <p>Building intelligent solutions with AI & Machine Learning</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://github.com/JoylineDsilva" target="_blank">GitHub</a></li>
+                            <li><a href="https://linkedin.com/in/joyline-dsilva" target="_blank">LinkedIn</a></li>
+                            <li><a href="mailto:joylined2004@gmail.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Joyline Dsilva. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/JoylineDsilva" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/joyline-dsilva" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:joylined2004@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
